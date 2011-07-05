@@ -1,0 +1,14 @@
+WX_VERSION=2.8
+inherit wxwidgets
+
+DESCRIPTION="wxWidgets SVG library"
+HOMEPAGE="http://sourceforge.net/projects/wxsvg/"
+SRC_URI="mirror://sourceforge/wxsvg/${P}.tar.bz2"
+PATCH_URI="1.0.10-vpath.patch"
+
+PKG_NAMES="wxsvg libwxsvg0 libwxsvg-devel"
+wxsvg_CONTENTS="usr/bin/svgview.exe usr/share/doc/"
+libwxsvg0_CONTENTS="usr/bin/cygwxsvg-0.dll"
+libwxsvg_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--disable-static"
