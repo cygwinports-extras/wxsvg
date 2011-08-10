@@ -4,7 +4,9 @@ inherit wxwidgets
 DESCRIPTION="wxWidgets SVG library"
 HOMEPAGE="http://sourceforge.net/projects/wxsvg/"
 SRC_URI="mirror://sourceforge/wxsvg/${P}.tar.bz2"
-PATCH_URI="1.0.10-vpath.patch"
+
+PATCH_URI="1.0.10-vpath.patch
+           1.1.1-no-undefined.patch"
 
 PKG_NAMES="wxsvg libwxsvg0 libwxsvg-devel"
 wxsvg_CONTENTS="usr/bin/svgview.exe usr/share/doc/"

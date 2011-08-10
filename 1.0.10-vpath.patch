@@ -18,16 +18,20 @@
  
 -INCLUDES = -I$(top_builddir)/include -I$(top_builddir)/include/wxSVG
 +INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/wxSVG
---- origsrc/wxsvg-1.0.10/src/agg/Makefile.am	2011-03-10 14:22:55.000000000 -0600
-+++ src/wxsvg-1.0.10/src/agg/Makefile.am	2011-07-04 22:27:26.972326700 -0500
-@@ -1,6 +1,6 @@
+--- origsrc/wxsvg-1.1.1/src/agg/Makefile.am
++++ src/wxsvg-1.1.1/src/agg/Makefile.am
+@@ -1,9 +1,9 @@
  noinst_LTLIBRARIES = libwxsvg_agg.la
  
+ if USE_FREETYPE
+-INCLUDES = -I$(top_builddir)/include -I$(top_builddir)/include/wxSVG $(FREETYPE_CFLAGS)
++INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/wxSVG $(FREETYPE_CFLAGS)
+ libwxsvg_agg_la_SOURCES = SVGCanvasAgg.cpp SVGCanvasPathAgg.cpp
+ else
 -INCLUDES = -I$(top_builddir)/include -I$(top_builddir)/include/wxSVG
 +INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/wxSVG
- if USE_FREETYPE
- INCLUDES = $(INCLUDES) $(FREETYPE_CFLAGS)
- libwxsvg_agg_la_SOURCES = SVGCanvasAgg.cpp SVGCanvasPathAgg.cpp
+ libwxsvg_agg_la_SOURCES = SVGCanvasAgg.cpp SVGCanvasPathAgg.cpp SVGCanvasTextAgg.cpp
+ endif
 --- origsrc/wxsvg-1.0.10/src/cairo/Makefile.am	2005-08-06 14:25:51.000000000 -0500
 +++ src/wxsvg-1.0.10/src/cairo/Makefile.am	2011-07-04 22:27:34.522739900 -0500
 @@ -2,5 +2,5 @@ noinst_LTLIBRARIES = libwxsvg_cairo.la
