@@ -14,3 +14,5 @@ libwxsvg0_CONTENTS="usr/bin/cygwxsvg-0.dll"
 libwxsvg_devel_CONTENTS="usr/include/ usr/lib/"
 
 CYGCONF_ARGS="--disable-static"
+
+KEEP_LA_FILES="none"
