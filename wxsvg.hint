@@ -1,5 +1,0 @@
-category: Graphics
-requires: libgcc1 libstdc++6 libwx_baseu2.8_0 libwx_gtk2u2.8_0 libwxsvg0
-sdesc: "wxWidgets SVG viewer"
-ldesc: "wxSVG is a library to create, manipulate and render SVG files 
-with the wxWidgets C++ GUI toolkit."

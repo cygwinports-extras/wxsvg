@@ -1,18 +1,24 @@
 WX_VERSION=2.8
 inherit wxwidgets
 
-DESCRIPTION="wxWidgets SVG library"
+NAME="wxsvg"
+VERSION=1.1.12
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="wxWidgets SVG library"
+DESCRIPTION="wxSVG is a library to create, manipulate and render SVG files with
+the wxWidgets C++ GUI toolkit."
 HOMEPAGE="http://sourceforge.net/projects/wxsvg/"
 SRC_URI="mirror://sourceforge/wxsvg/${P}.tar.bz2"
 
-PATCH_URI="1.0.10-vpath.patch
-           1.1.1-no-undefined.patch"
+PATCH_URI="1.1.1-no-undefined.patch"
 
 PKG_NAMES="wxsvg libwxsvg0 libwxsvg-devel"
+wxsvg_SUMMARY="wxWidgets SVG viewer"
 wxsvg_CONTENTS="usr/bin/svgview.exe usr/share/doc/"
 libwxsvg0_CONTENTS="usr/bin/cygwxsvg-0.dll"
 libwxsvg_devel_CONTENTS="usr/include/ usr/lib/"
 
-CYGCONF_ARGS="--disable-static"
+ACLOCAL_FLAGS="-I ."
 
 KEEP_LA_FILES="none"

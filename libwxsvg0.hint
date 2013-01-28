@@ -1,6 +1,0 @@
-category: Graphics
-requires: libavcodec53 libavformat53 libavutil51 libcairo2 libexpat1 libgcc1 libglib2.0_0 libpango1.0_0 libstdc++6 libswscale2 libwx_baseu2.8_0 libwx_gtk2u2.8_0
-external-source: wxsvg
-sdesc: "wxWidgets SVG library (runtime)"
-ldesc: "wxSVG is a library to create, manipulate and render SVG files 
-with the wxWidgets C++ GUI toolkit."

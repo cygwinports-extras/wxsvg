@@ -1,6 +1,0 @@
-category: Graphics
-requires: libwxsvg0 libwx_baseu2.8-devel libwx_gtk2u2.8-devel
-external-source: wxsvg
-sdesc: "wxWidgets SVG library (development)"
-ldesc: "wxSVG is a library to create, manipulate and render SVG files 
-with the wxWidgets C++ GUI toolkit."
